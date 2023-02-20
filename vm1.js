@@ -8,7 +8,7 @@ const userInputCustomJavaScriptCode = "userCustomNickname = 'Johnny Mnemonic';";
 
 // This code will throw an error because there's no such variable
 // defined in the context as productExpirationMinutes.
-// const userInputCustomJavaScriptCode = "userCustomNickname = 'Johnny Mnemonic'; productExpirationMinutes += 60";
+// const userInputCustomJavaScriptCode = "userCustomNickname = 'Johnny Mnemonic'; productExpirationDays += 60";
 
 const context = { userCustomNickname: "John Nash" };
 vm.createContext(context);
