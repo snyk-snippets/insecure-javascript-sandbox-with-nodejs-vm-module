@@ -1,7 +1,5 @@
 const vm = require("node:vm");
 
-const productExpirationDays = 14;
-
 // This could will result in a denial of service attack
 // for the running Node.js application due to the
 // infinite loop executed within the virtual machine context
@@ -14,4 +12,5 @@ vm.createContext(context);
 
 vm.runInContext(userInputCustomJavaScriptCode, context);
 
+// This will never run:
 console.log("Never fear, I is here");
